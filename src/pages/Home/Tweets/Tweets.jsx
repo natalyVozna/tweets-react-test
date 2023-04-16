@@ -39,8 +39,6 @@ const Tweets = () => {
   };
 
   useEffect(() => {
-    // setHideBtn(false);
-    // setSearchParams({ isFollowing: "all", page: 1 });
     getUsers({ page: page }).then(updateData);
   }, []);
 
