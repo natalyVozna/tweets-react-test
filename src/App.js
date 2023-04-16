@@ -13,7 +13,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tweets" element={<Tweets />} />
         <Route path="*" element={<Navigate to="/" />} />
-        {/* <Route path="/*" element={<NotFound />} /> */}
       </Routes>
     </>
   );
