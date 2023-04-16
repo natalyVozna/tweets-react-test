@@ -24,7 +24,8 @@ const Select = () => {
     dataList.forEach((el) =>
       el.value === isFollowing ? setCurrentFilter(el.name) : "show all"
     );
-  }, [isFollowing, dataList]);
+    // eslint-disable-next-line
+  }, [isFollowing]);
 
   const toggleMenu = (e) => {
     e.preventDefault();
