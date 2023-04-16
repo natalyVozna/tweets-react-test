@@ -38,6 +38,7 @@ const Tweets = () => {
     setLoading(false);
   };
 
+  // eslint-disable-next-line
   useEffect(() => {
     getUsers({ page: page }).then(updateData);
   }, []);
@@ -45,7 +46,7 @@ const Tweets = () => {
   useEffect(() => {
     setLoading(true);
     setPageCur(page);
-    if (page == 1) {
+    if (page === 1 || page === "1") {
       setUsers([]);
       setHideBtn(false);
     }
@@ -57,6 +58,7 @@ const Tweets = () => {
     } else {
       getUsers({ page: page }).then(updateData);
     }
+    // eslint-disable-next-line
   }, [isFollowing, page]);
 
   useEffect(() => {
