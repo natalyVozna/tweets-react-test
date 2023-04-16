@@ -24,7 +24,7 @@ const Select = () => {
     dataList.forEach((el) =>
       el.value === isFollowing ? setCurrentFilter(el.name) : "show all"
     );
-  }, [isFollowing]);
+  }, [isFollowing, dataList]);
 
   const toggleMenu = (e) => {
     e.preventDefault();

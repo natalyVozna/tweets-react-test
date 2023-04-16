@@ -38,9 +38,9 @@ const Tweets = () => {
     setLoading(false);
   };
 
-  // eslint-disable-next-line
   useEffect(() => {
     getUsers({ page: page }).then(updateData);
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {

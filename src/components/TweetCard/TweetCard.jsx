@@ -11,13 +11,14 @@ import AvatarBox from "../AvatarBox/AvatarBox";
 import { patchFollow } from "../../services/api";
 
 const TweetCard = ({ user }) => {
-  const { avatar, followers, id, isFollowing, tweets, user: name } = user;
+  const { avatar, followers, id, isFollowing, tweets } = user;
   const [isFollow, setIsFollow] = useState(null);
   const [countFollowers, setCountFollowers] = useState(0);
 
   useEffect(() => {
     setIsFollow(isFollowing);
     setCountFollowers(followers);
+    // eslint-disable-next-line
   }, []);
 
   const updateData = (data) => {
