@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
-import Tweets from "./pages/Home/Tweets/Tweets";
+import Tweets from "./pages/Tweets/Tweets";
 import GlobalStyle from "./globalStyles";
 import NotFound from "./components/NotFound/NotFound";
 

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { colors } from "../../../utils/colors";
-import { device, transition } from "../../../utils/mixins";
+import { colors } from "../../utils/colors";
+import { device, transition } from "../../utils/mixins";
 
 export const Container = styled.div`
   display: flex;

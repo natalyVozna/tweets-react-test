@@ -6,10 +6,10 @@ import {
   Head,
   StyledButton,
 } from "./Tweets.styled";
-import TweetCard from "../../../components/TweetCard/TweetCard";
-import Select from "../../../components/Select/Select";
-import { getFilteredUsers, getUsers } from "../../../services/api";
-import { Loader } from "../../../components/Loader/Loader";
+import TweetCard from "../../components/TweetCard/TweetCard";
+import Select from "../../components/Select/Select";
+import { getFilteredUsers, getUsers } from "../../services/api";
+import { Loader } from "../../components/Loader/Loader";
 import { useSearchParams } from "react-router-dom";
 
 const Tweets = () => {
