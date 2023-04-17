@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import cover from "../../assets/svg/cover-tweet.svg";
-import { colors } from "../../utils/colors";
-import { device, transition } from "../../utils/mixins";
+import styled from 'styled-components';
+import cover from '../../assets/svg/cover-tweet.svg';
+import { colors } from '../../utils/colors';
+import { device, transition } from '../../utils/mixins';
 
 export const Container = styled.article`
   display: flex;
@@ -23,7 +23,7 @@ export const Container = styled.article`
   border-radius: 20px;
 
   ::after {
-    content: "";
+    content: '';
     position: absolute;
     width: calc(100% - 72px);
     height: 168px;
@@ -69,7 +69,7 @@ export const Text = styled.p`
 
 export const StyledButton = styled.button`
   padding: 14px;
-  background: ${(p) => (p.follow === true ? colors.green : colors.pink)};
+  background: ${p => (p.follow === true ? colors.green : colors.pink)};
   border-radius: 10px;
   text-align: center;
   display: flex;

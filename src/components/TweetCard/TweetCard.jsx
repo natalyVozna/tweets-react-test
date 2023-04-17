@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import {
   Container,
   InfoBox,
   Logo,
   StyledButton,
   Text,
-} from "./TweetCard.styled";
-import logo from "../../assets/svg/Logo.svg";
-import AvatarBox from "../AvatarBox/AvatarBox";
-import { patchFollow } from "../../services/api";
+} from './TweetCard.styled';
+import logo from '../../assets/svg/Logo.svg';
+import AvatarBox from '../AvatarBox/AvatarBox';
+import { patchFollow } from '../../services/api';
 
 const TweetCard = ({ user }) => {
   const { avatar, followers, id, isFollowing, tweets } = user;
@@ -21,28 +21,23 @@ const TweetCard = ({ user }) => {
     // eslint-disable-next-line
   }, []);
 
-  const updateData = (data) => {
+  const updateData = data => {
     setIsFollow(data.isFollowing);
     setCountFollowers(data.followers);
   };
 
-  const handleClick = async (e) => {
+  const handleClick = async e => {
     e.preventDefault();
-    if (!isFollow) {
-      const data = await patchFollow(id, {
-        ...user,
-        isFollowing: true,
-        followers: +countFollowers + 1,
-      });
-      updateData(data);
-    } else {
-      const data = await patchFollow(id, {
-        ...user,
-        isFollowing: false,
-        followers: +countFollowers - 1,
-      });
-      updateData(data);
-    }
+    let options = !isFollow
+      ? {
+          ...user,
+          isFollowing: true,
+          followers: +countFollowers + 1,
+        }
+      : { ...user, isFollowing: false, followers: +countFollowers - 1 };
+
+    const data = await patchFollow(id, options);
+    updateData(data);
   };
 
   return (
@@ -53,9 +48,9 @@ const TweetCard = ({ user }) => {
       <AvatarBox url={avatar} />
       <InfoBox>
         <Text> {tweets} tweets</Text>
-        <Text> {countFollowers?.toLocaleString("en-US")} Followers</Text>
+        <Text> {countFollowers?.toLocaleString('en-US')} Followers</Text>
         <StyledButton type="button" onClick={handleClick} follow={isFollow}>
-          {isFollow ? "Following" : "Follow"}
+          {isFollow ? 'Following' : 'Follow'}
         </StyledButton>
       </InfoBox>
     </Container>

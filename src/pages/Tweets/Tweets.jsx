@@ -1,34 +1,34 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Container,
   Gallery,
   GoBack,
   Head,
   StyledButton,
-} from "./Tweets.styled";
-import TweetCard from "../../components/TweetCard/TweetCard";
-import Select from "../../components/Select/Select";
-import { getFilteredUsers, getUsers } from "../../services/api";
-import { Loader } from "../../components/Loader/Loader";
-import { useSearchParams } from "react-router-dom";
+} from './Tweets.styled';
+import TweetCard from '../../components/TweetCard/TweetCard';
+import Select from '../../components/Select/Select';
+import { getFilteredUsers, getUsers } from '../../services/api';
+import { Loader } from '../../components/Loader/Loader';
+import { useSearchParams } from 'react-router-dom';
 
 const Tweets = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchParams, setSearchParams] = useSearchParams();
-  const isFollowing = searchParams.get("isFollowing") ?? "";
-  const page = searchParams.get("page") ?? 1;
+  const isFollowing = searchParams.get('isFollowing') ?? '';
+  const page = searchParams.get('page') ?? 1;
   const [pageCur, setPageCur] = useState(+page);
   const [hideBtn, setHideBtn] = useState(false);
   const galleryRef = useRef();
 
-  const updateData = (data) => {
+  const updateData = data => {
     if (data.length < 8) {
       setHideBtn(true);
     }
 
-    setUsers((prev) => {
-      if (pageCur !== 1 && pageCur !== "1") {
+    setUsers(prev => {
+      if (pageCur !== 1 && pageCur !== '1') {
         return [...prev, ...data];
       } else {
         return [...data];
@@ -46,11 +46,11 @@ const Tweets = () => {
   useEffect(() => {
     setLoading(true);
     setPageCur(page);
-    if (page === 1 || page === "1") {
+    if (page === 1 || page === '1') {
       setUsers([]);
       setHideBtn(false);
     }
-    if (isFollowing !== "" && isFollowing !== "all") {
+    if (isFollowing !== '' && isFollowing !== 'all') {
       getFilteredUsers({
         page: page,
         isFollowing: isFollowing,
@@ -67,15 +67,15 @@ const Tweets = () => {
         window.scrollTo({
           top: galleryRef.current.getBoundingClientRect().height + 100,
           left: 100,
-          behavior: "smooth",
+          behavior: 'smooth',
         });
       }
     }
   }, [users]);
 
-  const onLoadMore = (e) => {
+  const onLoadMore = e => {
     e.preventDefault();
-    setPageCur((prev) => +prev + 1);
+    setPageCur(prev => +prev + 1);
     if (isFollowing) {
       setSearchParams({ isFollowing, page: +page + 1 });
     } else {
@@ -90,12 +90,12 @@ const Tweets = () => {
   return (
     <Container>
       <Head>
-        <GoBack to={"/"}>&#8592; Go back</GoBack>
+        <GoBack to={'/'}>&#8592; Go back</GoBack>
         <Select />
       </Head>
 
       <Gallery ref={galleryRef}>
-        {users?.map((user) => (
+        {users?.map(user => (
           <TweetCard key={user.id} user={user} />
         ))}
       </Gallery>

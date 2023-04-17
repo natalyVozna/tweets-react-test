@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import { colors } from "../../utils/colors";
-import { device, transition } from "../../utils/mixins";
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import { colors } from '../../utils/colors';
+import { device, transition } from '../../utils/mixins';
 
 export const Container = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ export const Gallery = styled.ul`
   justify-content: center;
   gap: 26px;
   ${device.tablet} {
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 786px;
     margin: 0 auto;
   }
