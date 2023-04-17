@@ -9,6 +9,7 @@ import Home from './pages/Home/Home';
 import Tweets from './pages/Tweets/Tweets';
 import GlobalStyle from './globalStyles';
 import NotFound from './components/NotFound/NotFound';
+import { getUsers } from './services/api';
 
 const router = createBrowserRouter(
   [
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
     {
       path: '/tweets',
       element: <Tweets />,
+      errorElement: <NotFound />,
     },
   ],
   {
