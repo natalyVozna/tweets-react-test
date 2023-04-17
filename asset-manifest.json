@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/tweets-react-test/static/css/main.073c9b0a.css",
-    "main.js": "/tweets-react-test/static/js/main.fd691647.js",
-    "static/media/dog.webp": "/tweets-react-test/static/media/dog.6c0624e23f31d396bd31.webp",
-    "static/media/cover-tweet.svg": "/tweets-react-test/static/media/cover-tweet.404ae19cf117aadfeaf89f819fe0b49b.svg",
-    "static/media/dog.png": "/tweets-react-test/static/media/dog.b7acc139cc97dece4c04.png",
-    "static/media/hero-2x.webp": "/tweets-react-test/static/media/hero-2x.62043397905c7b8bd4f7.webp",
-    "static/media/hero-2x.png": "/tweets-react-test/static/media/hero-2x.d7dcb309ab5284817e42.png",
-    "static/media/hero.webp": "/tweets-react-test/static/media/hero.d40543ce9de3df4e3b99.webp",
-    "static/media/hero.png": "/tweets-react-test/static/media/hero.3bbc5007466200444682.png",
-    "static/media/Logo.svg": "/tweets-react-test/static/media/Logo.e917114d7945c04c85a8946a331d28b6.svg",
-    "static/media/circle-tweet.svg": "/tweets-react-test/static/media/circle-tweet.87553b80d686903274cde45e0b8a6064.svg",
-    "static/media/line-tweet.svg": "/tweets-react-test/static/media/line-tweet.3dc889ed819cc56238bce43c61f74ccc.svg",
-    "index.html": "/tweets-react-test/index.html",
-    "static/media/arrow-dropdown.svg": "/tweets-react-test/static/media/arrow-dropdown.2836ca7243c3960257970099f4655156.svg",
-    "main.073c9b0a.css.map": "/tweets-react-test/static/css/main.073c9b0a.css.map",
-    "main.fd691647.js.map": "/tweets-react-test/static/js/main.fd691647.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.973e309b.js",
+    "static/media/cover-tweet.svg": "/static/media/cover-tweet.404ae19cf117aadfeaf89f819fe0b49b.svg",
+    "static/media/hero-2x.webp": "/static/media/hero-2x.62043397905c7b8bd4f7.webp",
+    "static/media/hero-2x.png": "/static/media/hero-2x.d7dcb309ab5284817e42.png",
+    "static/media/hero.webp": "/static/media/hero.d40543ce9de3df4e3b99.webp",
+    "static/media/hero.png": "/static/media/hero.3bbc5007466200444682.png",
+    "static/media/Logo.svg": "/static/media/Logo.e917114d7945c04c85a8946a331d28b6.svg",
+    "static/media/circle-tweet.svg": "/static/media/circle-tweet.87553b80d686903274cde45e0b8a6064.svg",
+    "static/media/line-tweet.svg": "/static/media/line-tweet.3dc889ed819cc56238bce43c61f74ccc.svg",
+    "index.html": "/index.html",
+    "static/media/arrow-dropdown.svg": "/static/media/arrow-dropdown.2836ca7243c3960257970099f4655156.svg",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.973e309b.js.map": "/static/js/main.973e309b.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.fd691647.js"
+    "static/js/main.973e309b.js"
   ]
 }
