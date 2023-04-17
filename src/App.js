@@ -1,15 +1,9 @@
-import {
-  Route,
-  RouterProvider,
-  Routes,
-  createBrowserRouter,
-} from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
 import Tweets from './pages/Tweets/Tweets';
 import GlobalStyle from './globalStyles';
 import NotFound from './components/NotFound/NotFound';
-import { getUsers } from './services/api';
 
 const router = createBrowserRouter(
   [
