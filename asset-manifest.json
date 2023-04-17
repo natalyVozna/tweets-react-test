@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/tweets-react-test/static/css/main.073c9b0a.css",
-    "main.js": "/tweets-react-test/static/js/main.82b83bdd.js",
+    "main.js": "/tweets-react-test/static/js/main.1ba93a4b.js",
+    "static/media/dog.webp": "/tweets-react-test/static/media/dog.6c0624e23f31d396bd31.webp",
     "static/media/cover-tweet.svg": "/tweets-react-test/static/media/cover-tweet.404ae19cf117aadfeaf89f819fe0b49b.svg",
+    "static/media/dog.png": "/tweets-react-test/static/media/dog.b7acc139cc97dece4c04.png",
     "static/media/hero-2x.webp": "/tweets-react-test/static/media/hero-2x.62043397905c7b8bd4f7.webp",
     "static/media/hero-2x.png": "/tweets-react-test/static/media/hero-2x.d7dcb309ab5284817e42.png",
     "static/media/hero.webp": "/tweets-react-test/static/media/hero.d40543ce9de3df4e3b99.webp",
@@ -13,10 +15,10 @@
     "index.html": "/tweets-react-test/index.html",
     "static/media/arrow-dropdown.svg": "/tweets-react-test/static/media/arrow-dropdown.2836ca7243c3960257970099f4655156.svg",
     "main.073c9b0a.css.map": "/tweets-react-test/static/css/main.073c9b0a.css.map",
-    "main.82b83bdd.js.map": "/tweets-react-test/static/js/main.82b83bdd.js.map"
+    "main.1ba93a4b.js.map": "/tweets-react-test/static/js/main.1ba93a4b.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.82b83bdd.js"
+    "static/js/main.1ba93a4b.js"
   ]
 }
